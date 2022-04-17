@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*
+    em HTML é id= / em CSS é #
+    em HTML é class= / em CSS é .
+    id NÃO pode repetir nome
+    class é de classificação, pode repetir
+*/
+body {
+    background-color: rgb(205, 156, 238);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgba(68, 33, 223, 0.808);
+}
+
+
+#principal {
+    text-align: center;
+    color: rgb(86, 0, 148);
+}
+
+h2 {
+    color: rgba(114, 63, 207, 0.808);
+    text-shadow: 1px -1px 1px rgb(0, 0, 0);
+}
+
+.basico {
+    color: rgba(114, 63, 207, 0.808);;
+}
+
+.intermediario {
+    color: rgba(166, 255, 0, 0.952);
+}
+
+.avancado {
+    color: rgba(250, 71, 71, 0.904);
+}
+
+.destaque {
+    background-color: seashell;
+}

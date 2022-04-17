@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Aumente e diminua a janela para a imagem se ajustar automaticamente.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto_p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto_m.png" type="image/png">
+        <img src="Imagens/foto_g.png" alt="Foto de Tamanho de PC.">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Reproduzindo audios em HTML5 com a tag <code>&lt;audio&gt;</code> e os parametros <code>&lt;controls&gt;</code> e o <code>&lt;autoplay&gt;</code></p>
+    <audio src="midia/Axl_Arth_Criminal.mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG-->
+    <p>Reproduzindo audios em HTML5 com a tag <code>&lt;audio&gt;</code> mas apagando o parametro <code>src=""</code>e add a tag <code>&lt;source src="arquivo" type="audio/mpeg"&gt;</code>, criando o mesmo arquivo em .WAV e .OGG <br>Adicionamos o <code>preload="metadata"</code>, <code>controls.</code> e também o <code>loop</code>.</p>
+    <audio preload="metadata" controls>
+        <source src="midia/Axl_Arth_Criminal.mp3" type="audio/mpeg">
+        <source src="midia/Axl_Arth_Criminal.ogg" type="media/ogg">
+        <source src="midia/Axl_Arth_Criminal.wav" type="media/wav"> <!--EVITAR ARQUIVOS WAV POR SEREM MUITO PESADOS-->
+        <p>Infelizmente o seu navegador não tem suporte para o áudio. Baixe o arquivo<a href="midia/Axl_Arth_Criminal.mp3">clicando aqui</a>.</p>
+    </audio>
+</body>
+</html>

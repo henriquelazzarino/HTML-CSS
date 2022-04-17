@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor. Usei a tag <code>&lt;video&gt;</code>, <code>width=</code> para escolher o tamanho e <code>controls loop</code> para dar play e reiniciar.</p>
+    <video src="videos/video_aleatorio.m4v" width="600" controls loop></video>
+
+    <p>Agora vou usar o <code>&lt;video&gt;</code>, apagando o <code>src=""</code> e adicionando <code>&lt;source:src=""</code>&gt;</code></p>
+    <video controls loop width="600">
+        <!--USAR O POSTER"" PARA DECIDIR A THUMB-->
+        <source src="videos/video_aleatorio.m4v" type="video/m4v">
+        <source src="videos/video_aleatorio.mp4" type="video/mp4">
+        <source src="videos/video_aleatorio.ogv" type="video/ogv">
+        <p>Seu navegador não é compativel com reprodução de vídeos <a href="videos/video_aleatorio.mp4">Clique aqui</a> e faça o download.</p>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <p>Para colocar vídeos do YouTube você deve compartilhar e em "Embed".</p>
+    <iframe width="600" height="315" src="https://www.youtube.com/embed/hCPdPc553yE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <p>Igual ao passos do YouTube</p>
+    <iframe src="https://player.vimeo.com/video/197093965?loop=1&byline=0&portrait=0" width="600" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</body>
+</html>

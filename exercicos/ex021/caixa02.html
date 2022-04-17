@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: rgb(172, 197, 243);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        header {
+            background-color: rgb(146, 184, 255);
+            margin: 1pc;
+            padding: 10px;
+            border: 2px solid rgba(123, 168, 253, 0.76);
+            text-align: center;
+        }
+
+        nav{
+            background-color: rgb(131, 115, 115);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: rgb(91, 91, 255);
+            font-weight: bold;
+            margin-right: 5pc;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: rgba(79, 139, 252, 0.884);
+            margin: 5px;
+            border-radius: 15px 3px;
+            border: 2px dotted rgb(91, 91, 255);
+            padding: 2px;
+        }
+        article {
+            background-color: rgba(120, 120, 240, 0.445);
+            margin: 10px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        aside > p {
+            font-size: 13px;
+            text-align: right;
+        }
+
+        footer {
+            background-color: rgb(61, 226, 255);
+            padding: 5px;
+            margin: 20px 0px 0px 0px;
+        }
+
+        footer > p{
+            text-align: center;
+            margin: 0px;
+        }
+
+        div#circulo {
+            height: 200px;
+            width: 200px;
+            background-color: cadetblue;
+            margin: 10px;
+            border: 2px black;
+        }
+
+        div#circulo:hover {
+            background-color: rgb(64, 121, 226);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="noticias">
+            <article>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque rerum libero dolorum sint nobis neque nesciunt dignissimos sapiente ipsam minima repellendus blanditiis sequi deleniti, vero ipsum quasi impedit hic excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi ad et nulla? Neque iste rem doloremque amet aliquam nulla voluptates pariatur ratione esse, voluptatum, numquam minus nam tenetur. Cum, enim?</p>
+                <aside>
+                    <p>Escrito por João da Silva</p>
+                </aside>
+            </article>
+        </section>
+        <section id="assuntos">
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por</p>
+    </footer>
+    <div id="circulo">
+
+    </div>
+</body>
+</html>
