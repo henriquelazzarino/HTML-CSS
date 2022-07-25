@@ -19,11 +19,17 @@
             padding: 10px;
         }
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(68, 68, 68);
             color: white;
         }
         .num{
             text-align: right;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: white;
         }
         caption{
             font-size: 1.5em;
